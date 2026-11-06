@@ -1,0 +1,85 @@
+.header {
+  background: var(--white);
+  padding: 20px 60px 0;
+}
+
+.header-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header-busca {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 559px;
+  height: 60px;
+  padding: 0 20px;
+  background: var(--light-gray-3);
+  border-radius: 8px;
+}
+
+.header-busca input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: var(--dark-gray-2);
+}
+
+.header-busca button {
+  display: flex;
+  border: none;
+  background: transparent;
+  color: var(--light-gray);
+  cursor: pointer;
+}
+
+.header-acesso {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.link-cadastro {
+  font-size: 16px;
+  color: var(--dark-gray-2);
+  text-decoration: underline;
+}
+
+.botao-entrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 114px;
+  height: 40px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.header-nav a {
+  padding-bottom: 6px;
+  font-size: 16px;
+  color: var(--dark-gray-2);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.header-nav a.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+  
