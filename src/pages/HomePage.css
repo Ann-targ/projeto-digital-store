@@ -1,0 +1,13 @@
+.colecoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.colecoes img {
+  flex: 1 1 280px;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 4px;
+}
