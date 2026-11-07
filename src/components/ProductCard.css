@@ -1,0 +1,35 @@
+.product-card {
+  width: 292px;
+}
+
+.product-card img {
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--light-gray-3);
+}
+
+.product-card h3 {
+  margin: 12px 0 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-gray-2);
+}
+
+.product-card-precos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.preco {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.preco-antigo {
+  font-size: 24px;
+  color: var(--light-gray);
+  text-decoration: line-through;
+}

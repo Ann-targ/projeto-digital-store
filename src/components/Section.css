@@ -1,0 +1,35 @@
+.section {
+  margin: 40px 0;
+}
+
+.section-topo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-left {
+  justify-content: space-between;
+}
+
+.section-center {
+  position: relative;
+  justify-content: center;
+}
+
+.section-center a {
+  position: absolute;
+  right: 0;
+}
+
+.section-topo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-gray-2);
+}
+
+.section-topo a {
+  font-size: 18px;
+  color: var(--primary);
+  text-decoration: none;
+}
