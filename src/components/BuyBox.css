@@ -1,0 +1,88 @@
+.buy-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.bb-nome {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.bb-referencia {
+  margin: 8px 0 14px;
+  font-size: 12px;
+  color: var(--dark-gray-3);
+}
+
+.bb-avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bb-estrelas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--warning);
+  color: var(--white);
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.bb-total {
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.bb-precos {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.bb-preco {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark-gray-2);
+}
+
+.bb-preco-antigo {
+  font-size: 16px;
+  color: var(--light-gray-2);
+  text-decoration: line-through;
+}
+
+.bb-descricao h3 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.bb-descricao p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--dark-gray-2);
+}
+
+.bb-rotulo {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--light-gray);
+}
+
+.bb-comprar {
+  margin-top: 30px;
+  padding: 14px 60px;
+  border: none;
+  border-radius: 8px;
+  background: var(--warning);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
