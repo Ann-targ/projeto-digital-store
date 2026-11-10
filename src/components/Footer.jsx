@@ -36,8 +36,7 @@ function Footer() {
         <div className="footer-marca">
           <Logo footer />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            O melhor da moda urbana você encontra aqui na Digital Store. Compre online e receba no conforto da sua casa.
           </p>
           <div className="footer-redes">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
