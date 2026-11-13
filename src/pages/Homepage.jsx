@@ -16,14 +16,14 @@ const slides = [
 ];
 
 const produtosEmAlta = [
-  { name: 'Nome do produto 1', image: '/product-thumb-1.jpeg', price: 200, priceDiscount: 149.9 },
-  { name: 'Nome do produto 2', image: '/product-thumb-2.jpeg', price: 49.9 },
-  { name: 'Nome do produto 3', image: '/product-thumb-3.jpeg', price: 89.9 },
-  { name: 'Nome do produto 4', image: '/product-thumb-4.jpeg', price: 120, priceDiscount: 99.9 },
-  { name: 'Nome do produto 5', image: '/product-thumb-5.jpeg', price: 59.9 },
-  { name: 'Nome do produto 6', image: '/product-thumb-1.jpeg', price: 230, priceDiscount: 189.9 },
-  { name: 'Nome do produto 7', image: '/product-thumb-2.jpeg', price: 74.9 },
-  { name: 'Nome do produto 8', image: '/product-thumb-3.jpeg', price: 99.9 },
+  { name: 'Nike 1', image: '/product-thumb-1.jpeg', price: 200, priceDiscount: 149.9 },
+  { name: 'Nike 2', image: '/product-thumb-2.jpeg', price: 49.9 },
+  { name: 'K-swiss 1', image: '/product-thumb-3.jpeg', price: 89.9 },
+  { name: 'K-swiss 2', image: '/product-thumb-4.jpeg', price: 120, priceDiscount: 99.9 },
+  { name: 'Nike 3', image: '/product-thumb-5.jpeg', price: 59.9 },
+  { name: 'Nike 4', image: '/product-thumb-1.jpeg', price: 230, priceDiscount: 189.9 },
+  { name: 'Nike 5', image: '/product-thumb-2.jpeg', price: 74.9 },
+  { name: 'Calenciaga 1', image: '/product-thumb-3.jpeg', price: 99.9 },
 ];
 
 function HomePage() {

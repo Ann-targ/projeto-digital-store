@@ -1,81 +1,84 @@
-import { useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Layout from './Layout';
+import Gallery from '../components/Gallery';
+import BuyBox from '../components/BuyBox';
+import ProductOptions from '../components/ProductOptions';
+import Section from '../components/Section';
 import ProductListing from '../components/ProductListing';
-import FilterGroup from '../components/FilterGroup';
-import './ProductListingPage.css';
+import './ProductViewPage.css';
 
-const produtos = [
+const imagens = [
+  { src: '/produc-image-1.jpeg' },
+  { src: '/produc-image-2.jpeg' },
+  { src: '/produc-image-3.jpeg' },
+  { src: '/produc-image-4.jpeg' },
+  { src: '/produc-image-5.jpeg' },
+];
+
+const relacionados = [
   { name: 'Nome do produto 1', image: '/product-thumb-1.jpeg', price: 200, priceDiscount: 149.9 },
-  { name: 'Nome do produto 2', image: '/product-thumb-2.jpeg', price: 49.9 },
+  { name: 'Nome do produto 2', image: '/product-thumb-2.jpeg', price: 200, priceDiscount: 100 },
   { name: 'Nome do produto 3', image: '/product-thumb-3.jpeg', price: 89.9 },
-  { name: 'Nome do produto 4', image: '/product-thumb-4.jpeg', price: 120, priceDiscount: 99.9 },
-  { name: 'Nome do produto 5', image: '/product-thumb-5.jpeg', price: 59.9 },
-  { name: 'Nome do produto 6', image: '/product-thumb-1.jpeg', price: 230, priceDiscount: 189.9 },
+  { name: 'Nome do produto 4', image: '/product-thumb-4.jpeg', price: 120 },
 ];
 
-const marcas = [
-  { text: 'Adidas', value: 'adidas' },
-  { text: 'Nike', value: 'nike' },
-  { text: 'Puma', value: 'puma' },
-  { text: 'Calçados', value: 'calcados' },
-];
-
-const categorias = [
-  { text: 'Esporte e lazer', value: 'esporte' },
-  { text: 'Casual', value: 'casual' },
-  { text: 'Utilitário', value: 'utilitario' },
-  { text: 'Corrida', value: 'corrida' },
-];
-
-const generos = [
-  { text: 'Masculino', value: 'masculino' },
-  { text: 'Feminino', value: 'feminino' },
-  { text: 'Unisex', value: 'unisex' },
-];
-
-const estados = [
-  { text: 'Novo', value: 'novo' },
-  { text: 'Usado', value: 'usado' },
-];
-
-function ProductListingPage() {
-  // Lê o texto digitado na busca do cabeçalho (/products?filter=texto)
-  const [parametros] = useSearchParams();
-  const termo = parametros.get('filter');
-
-  let titulo = 'Todos os produtos';
-  if (termo) {
-    titulo = 'Resultados para "' + termo + '"';
-  }
-
+function ProductViewPage() {
   return (
     <Layout>
-      <div className="listagem-topo">
-        <h2>
-          {titulo} <span>- {produtos.length} produtos</span>
-        </h2>
+      <nav className="trilha">
+        <Link to="/">Home</Link> / <Link to="/produtos">Produtos</Link> / Tênis / Nike /
+        Tênis Nike Revolution 6 Next Nature Masculino
+      </nav>
 
-        <select className="listagem-ordenar">
-          <option value="relevantes">Ordenar por: mais relevantes</option>
-          <option value="menor">Ordenar por: menor preço</option>
-          <option value="maior">Ordenar por: maior preço</option>
-        </select>
+      <div className="produto-topo">
+        <Gallery
+          images={imagens}
+          showThumbs
+          width="700px"
+          height="570px"
+          radius="4px"
+          className="produto-galeria"
+        />
+
+        <BuyBox
+          name="Tênis Nike Revolution 6 Next Nature Masculino"
+          category="Casual"
+          brand="Nike"
+          reference="38416711"
+          stars={4.7}
+          rating={90}
+          price={249}
+          priceDiscount={219}
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        >
+          <p className="bb-rotulo">Tamanho</p>
+          <ProductOptions
+            options={['39', '40', '41', '42', '43']}
+            shape="square"
+            radius="4px"
+            type="text"
+            initial="41"
+          />
+
+          <p className="bb-rotulo">Cor</p>
+          <ProductOptions
+            options={['#6FEEFF', '#FF6C6C', '#5E5E5E', '#6D70B7']}
+            shape="circle"
+            type="color"
+            initial="#FF6C6C"
+          />
+        </BuyBox>
       </div>
 
-      <div className="listagem-corpo">
-        <aside className="listagem-filtros">
-          <h3 className="filtros-titulo">Filtrar por</h3>
-          <hr />
-          <FilterGroup title="Marca" inputType="checkbox" options={marcas} />
-          <FilterGroup title="Categoria" inputType="checkbox" options={categorias} />
-          <FilterGroup title="Gênero" inputType="checkbox" options={generos} />
-          <FilterGroup title="Estado" inputType="radio" options={estados} />
-        </aside>
-
-        <ProductListing products={produtos} />
-      </div>
+      <Section
+        title="Produtos Relacionados"
+        titleAlign="left"
+        link={{ text: 'Ver todos →', href: '/products' }}
+      >
+        <ProductListing products={relacionados} />
+      </Section>
     </Layout>
   );
 }
 
-export default ProductListingPage;
+export default ProductViewPage;

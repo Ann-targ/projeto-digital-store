@@ -7,7 +7,6 @@
 .opcao {
   border: 1px solid var(--light-gray-2);
   background: var(--white);
-  font-size: 24px;
   color: var(--dark-gray-2);
   cursor: pointer;
 }
@@ -16,15 +15,24 @@
   min-width: 46px;
   height: 46px;
   padding: 0 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.opcao-square.selecionada {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
 }
 
 .opcao-circle {
   width: 31px;
   height: 31px;
   padding: 0;
+  border: none;
   border-radius: 50%;
 }
 
-.opcao.selecionada {
-  border: 2px solid var(--primary);
+.opcao-circle.selecionada {
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary);
 }
