@@ -1,7 +1,7 @@
 import ProductCard from './ProductCard';
 import './ProductListing.css';
 
-// Recebe uma lista de produtos e cria um cartão para cada um
+// Recebe uma lista de produtos 
 function ProductListing({ products }) {
   return (
     <div className="product-listing">
@@ -12,6 +12,8 @@ function ProductListing({ products }) {
           name={produto.name}
           price={produto.price}
           priceDiscount={produto.priceDiscount}
+          category={produto.category || 'TENIS'}
+
         />
       ))}
     </div>

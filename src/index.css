@@ -12,6 +12,7 @@
   --light-gray-2: #CCCCCC;
   --light-gray-3: #F5F5F5;
   --white: #FFFFFF;
+  --background: #F9F8FE;
 }
 
 * {
@@ -22,9 +23,10 @@
 
 body {
   font-family: Inter, Arial, sans-serif;
-  background: var(--white);
+  background: var(--background);
   color: var(--dark-gray-2);
 }
+
 .layout {
   min-height: 100vh;
   display: flex;
@@ -33,5 +35,5 @@ body {
 
 .layout main {
   flex: 1;
-  padding: 20px 60px;
+  padding: 20px 100px;
 }

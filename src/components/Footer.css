@@ -1,7 +1,7 @@
 .footer {
   background: var(--dark-gray);
   color: var(--white);
-  padding: 60px 60px 30px;
+  padding: 60px 100px 30px;
 }
 
 .footer-topo {
