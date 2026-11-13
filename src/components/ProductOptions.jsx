@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import './ProductOptions.css';
 
-// Mostra opções clicáveis (tamanhos ou cores).
-// "initial" é a opção que já aparece escolhida, se houver.
+// Mostra opções clicáveis 
 function ProductOptions({ options, radius, shape = 'square', type = 'text', initial }) {
   const [selecionada, setSelecionada] = useState(initial || null);
 

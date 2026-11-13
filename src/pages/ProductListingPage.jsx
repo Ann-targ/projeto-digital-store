@@ -16,10 +16,10 @@ const imagens = [
 ];
 
 const relacionados = [
-  { name: 'Nome do produto 1', image: '/product-thumb-1.jpeg', price: 200, priceDiscount: 149.9 },
-  { name: 'Nome do produto 2', image: '/product-thumb-2.jpeg', price: 200, priceDiscount: 100 },
-  { name: 'Nome do produto 3', image: '/product-thumb-3.jpeg', price: 89.9 },
-  { name: 'Nome do produto 4', image: '/product-thumb-4.jpeg', price: 120 },
+  { name: 'Nike 1', image: '/product-thumb-1.jpeg', price: 200, priceDiscount: 149.9 },
+  { name: 'Nike 2', image: '/product-thumb-2.jpeg', price: 200, priceDiscount: 100 },
+  { name: 'K-swiss 1', image: '/product-thumb-3.jpeg', price: 89.9 },
+  { name: 'Balenciaga 1', image: '/product-thumb-4.jpeg', price: 120 },
 ];
 
 function ProductViewPage() {

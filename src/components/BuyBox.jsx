@@ -6,7 +6,7 @@ function formatar(valor) {
 }
 
 function BuyBox({ name, category, brand, reference, stars, rating, price, priceDiscount, description, children }) {
-  // Monta as 5 estrelas: as cheias (★) e as vazias (☆)
+  // Monta as 5 estrelas as cheias e as vazias 
   const cheias = Math.floor(stars);
   const estrelas = '★'.repeat(cheias) + '☆'.repeat(5 - cheias);
 

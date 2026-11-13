@@ -1,6 +1,6 @@
 import './Section.css';
 
-// Mostra um título e, embaixo, qualquer conteúdo que for colocado dentro dele
+// Mostra um título e qualquer conteúdo que for colocado dentro dele
 function Section({ title, titleAlign = 'left', link, children }) {
   const classeTopo = 'section-topo section-' + titleAlign;
 

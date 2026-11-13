@@ -3,14 +3,14 @@ import arrowLeft from '../assets/arrow-left.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import './Gallery.css';
 
-// Aceita 700, "700" ou "700px" e devolve sempre "700px"
+// aceita 700, "700" ou "700px" e devolve sempre "700px"
 function emPixels(valor) {
   if (!valor) return undefined;
   return String(valor).endsWith('px') ? valor : valor + 'px';
 }
 
 function Gallery({ images, width, height, radius, showThumbs, className = '' }) {
-  // "atual" guarda qual imagem está aparecendo (0 é a primeira)
+  // guarda qual imagem está aparecendo 
   const [atual, setAtual] = useState(0);
   const ultima = images.length - 1;
 

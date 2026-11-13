@@ -23,7 +23,7 @@ const produtosEmAlta = [
   { name: 'Nike 3', image: '/product-thumb-5.jpeg', price: 59.9 },
   { name: 'Nike 4', image: '/product-thumb-1.jpeg', price: 230, priceDiscount: 189.9 },
   { name: 'Nike 5', image: '/product-thumb-2.jpeg', price: 74.9 },
-  { name: 'Calenciaga 1', image: '/product-thumb-3.jpeg', price: 99.9 },
+  { name: 'Balenciaga 1', image: '/product-thumb-3.jpeg', price: 99.9 },
 ];
 
 function HomePage() {
